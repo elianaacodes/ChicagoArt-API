@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="An Art Mock-up"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer></script>
+
+    <title>The Art API</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Artwork is from the Chicago Art Institute</h1>
+        <h4 class="text-center">Click on an artwork to learn more.</h4>
+
+        <div class="gallery container">
+            <div class="row">
+                <figure class="col-md" id="fig1" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/fig1.jpeg" id="27992" alt="A Sunday on La Grande Jatte — 1884" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="gallery_item gallery_item-2 col-md" id="fig2" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/fig2.jpeg" id="64818" alt="Stacks of Wheat (End of Summer)" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+
+            </div>
+            <div class="row">
+                <figure class="gallery_item gallery_item-3 col-md" id="fig3" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/fig3.jpeg" id="16568" alt="Water Lillies" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="gallery_item gallery_item-4 col-md" id="fig4" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/fig4.jpeg" id="20684" alt="Paris Street; Rainy Day" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+            <div class="row">
+                <figure class="gallery_item gallery_item-5 col-md" id="fig5" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/fig5.jpeg" id="80607" alt="Self-Portrait of Vincent Van Gogh" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="gallery_item gallery_item-6 col-md" id="fig6" onclick="event.stopPropagation(); getPainting(this.id, event)">
+                    <img src="/static/fig6.jpeg" id="111436" alt="Basket of Apples" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
